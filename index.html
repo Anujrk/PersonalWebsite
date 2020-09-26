@@ -148,7 +148,7 @@
                                                             <li><a href="https://www.instagram.com/anujrk/"><span aria-hidden="true" class="icon-instagram" title="Instagram"></span></a></li>
                                                             <li><a href="https://www.facebook.com/anujrks/" target="_blank" class="icon-facebook"><i class="fab fa-facebook-f-1"></i></a></li>
                                                             <li><a href="#" class="contact-toggle"><span aria-hidden="true" class="icon-mail" title="Email"></span></a></li>
-                                                            <li><a href="https://drive.google.com/file/d/1ZYTjUZDICqMV7J75h6LR74C-DVor6D0U/view?usp=sharing" target="_blank" class="icon-resume"><i class="far fa-file">
+                                                            <li><a href="https://drive.google.com/file/d/14fpgXNjacFFYhVIEzSzXr_ixhH_IRmGO/view?usp=sharing" target="_blank" class="icon-resume"><i class="far fa-file">
                                                                         <p style="font-size: 11px">Resume</p>
                                                                     </i></a></li>
                                                         </ul>
@@ -369,6 +369,7 @@
                                                     <ul class="nav nav-pills" id="myTab">
                                                         <li class="active"><a href="#AI" class="nav-link" data-toggle="tab">ARTIFICAL INTELLIGENCE</a></li>
                                                         <li><a href="#BD" class="nav-link" data-toggle="tab">BIG DATA</a></li>
+                                                        <li><a href="#CV" class="nav-link" data-toggle="tab">COMPUTER VISION</a></li>
                                                     </ul>
                                                     <div class="tab-content">
                                                         <div class="tab-pane fade in active" id="AI">
@@ -460,14 +461,47 @@
                                                                 <span class="dot2" onclick="currentSlide(2,1)"></span>
                                                             </div>
                                                         </div>
+                                                        <div class="tab-pane fade" id="CV">
+                                                            <div class="slideshow-container" style="top:20px">
+                                                                <div class="mySlides3 fadePj">
+                                                                    <img src="assets/themes/instagram/images/ComputerVision1.png" style="width:100%">
+                                                                    <ul class="list-inline list-social text-30">
+                                                                        <li><a href="https://github.com/Anujrk/Computer-Vision/tree/master/Motion%20Detection%20Program" target="_blank" class="icon-github"><i class="fab fa-github-1"></i></a></li>
+                                                                    </ul>
+                                                                    <div class="text" style="color: #cacaca">Real-time motion based multiple object detection and recognition</div>
+                                                                    <br>
+                                                                    <p style="font-size: 20px">Implemented a mixture of Single Shot detector and You Only Look Once algorithms to detect objects in a real time video using Deep neural networks. Used Contourlet transform to track multiple objects in real time using openCV2.</p>
+                                                                </div>
+
+                                                                <div class="mySlides3 fadePj">
+                                                                    <img src="assets/themes/instagram/images/CV2.JPG" style="width:100%">
+                                                                    <ul class="list-inline list-social text-30">
+                                                                        <li><a href="https://github.com/Anujrk/Computer-Vision/tree/master/SmileySelfie" target="_blank" class="icon-github"><i class="fab fa-github-1"></i></a></li>
+                                                                    </ul>
+                                                                    <div class="text" style="color: #cacaca">Auto-selfie on smile</div>
+                                                                    <br>
+                                                                    <p style="font-size: 20px">Created a program using Python which captures photo from camera automatically after detecting smile using Haar-cascades classifiers that detect features of the face.</p>
+                                                                </div>
+
+                                                                <a class="prev" onclick="plusSlides(-1, 2)">&#10094;</a>
+                                                                <a class="next" onclick="plusSlides(1, 2)">&#10095;</a>
+
+                                                            </div>
+                                                            <br>
+                                                            <div style="text-align:center">
+                                                                <span class="dot3" onclick="currentSlide(1,2)"></span>
+                                                                <span class="dot3" onclick="currentSlide(2,2)"></span>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                                 <script>
-                                                    var slideIndex = [1, 1];
-                                                    var slideId = ["mySlides1", "mySlides2"];
-                                                    var dotId = ["dot1", "dot2"];
+                                                    var slideIndex = [1, 1, 1];
+                                                    var slideId = ["mySlides1", "mySlides2","mySlides3"];
+                                                    var dotId = ["dot1", "dot2", "dot3"];
                                                     showSlides(1, 0);
                                                     showSlides(1, 1);
+                                                    showSlides(1, 2);
 
                                                     function plusSlides(n, no) {
                                                         showSlides(slideIndex[no] += n, no);
