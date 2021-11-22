@@ -13,6 +13,7 @@ hgroup,
 main,
 nav,
 section,
+
 summary {
   display: block;
 }
@@ -6726,4 +6727,39 @@ background: #282828;
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+.collapsible {
+  background-color: #2a2a2a;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.cactive, .collapsible:hover {
+  background-color: #212121;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.cactive:after {
+  content: "\2212";
+}
+
+.ccontent {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #2a2a2a;
 }
